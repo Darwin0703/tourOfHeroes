@@ -29,7 +29,7 @@ button {
   margin-top: 1rem;
 }
 button:hover {
-  background-color: black;
+  /*background-color: black;*/
   color: white;
 }
 button:disabled {
@@ -42,5 +42,3 @@ button:disabled {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
