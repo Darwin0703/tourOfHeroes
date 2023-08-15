@@ -1,0 +1,7 @@
+mat-card img{ 
+  object-fit: cover;
+  width: 100%;
+}
+.header-image-avatar{
+  object-fit: cover;
+}
