@@ -1,8 +1,8 @@
-<mat-card width:20%>
+<mat-card style="height: 100%;">
   <mat-card-header>
-    <mat-card-title>Top Heroes</mat-card-title>
+    <mat-toolbar color="primary">Top Heroes</mat-toolbar>
   </mat-card-header>
-  <mat-card-content >
+  <mat-card-content>
     <div style="display: flex; align-items: stretch; gap: 1rem; padding-top: 1rem;" >
       <mat-card *ngFor="let hero of heroes" style="width: 100%;">
         <mat-card-header>
@@ -26,37 +26,5 @@
   </mat-card-content>
 </mat-card>    
 
-
-<!-- <mat-card>
-  <mat-card-header>
-    <mat-card-title>Top Heroes</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-
-    <mat-grid-list cols="5" rowHeight="40rem" gutterSize="1rem">
-      <mat-grid-tile *ngFor="let hero of heroes">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar>
-              <img src="{{hero.logo}}" width="50" alt="">
-            </div>
-            <mat-card-title>{{hero.name}}</mat-card-title>
-            <mat-card-subtitle>Marvel Heroes</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="{{hero.image}}" width="400">
-          <mat-card-content>
-            <p>{{hero.descripcion}}</p>
-          </mat-card-content>
-          <mat-card-actions>
-            <a routerLink="/detail/{{hero.id}}">
-              <button mat-raised-button color="primary">Modificar</button>
-            </a>        
-          </mat-card-actions>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
-
-  </mat-card-content>
-</mat-card> -->
 
 

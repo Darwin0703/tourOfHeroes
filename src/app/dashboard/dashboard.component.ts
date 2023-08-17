@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @Component({
@@ -18,6 +19,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     RouterLink,
     NgFor,
     MatButtonModule,
+    MatToolbarModule,
     MatGridListModule
   ]
 })

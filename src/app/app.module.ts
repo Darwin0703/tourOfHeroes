@@ -11,8 +11,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {  MatToolbarModule } from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatToolbarModule,
     MatButtonModule,
-    DashboardComponent
+    DashboardComponent,
+    MatCardModule,
+    MatGridListModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

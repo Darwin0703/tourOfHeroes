@@ -10,4 +10,7 @@ mat-toolbar a {
 mat-toolbar a:hover {
     color: #aaaaaa;
 } 
+.mat-grid-tile-content {
+    align-items: normal !important;
 
+}

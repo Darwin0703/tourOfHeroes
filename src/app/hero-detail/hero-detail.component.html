@@ -1,11 +1,16 @@
-<div *ngIf="hero">
+<mat-card *ngIf="hero">
+  <mat-card-header>
+    <mat-toolbar color="primary">Modificar Heroe - {{hero.name | uppercase}} - id: {{hero.id}}</mat-toolbar>
+  </mat-card-header>
+  <mat-card-content>
 
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{hero.id}}</div>
+      <mat-form-field >
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Ironman" [(ngModel)]="hero.name" value="{{hero.name}}">
+      </mat-form-field>
+
     <div>
-      <label>name:
-        <input [(ngModel)]="hero.name" placeholder="name"/>
-      </label>
+      <button mat-raised-button color="primary" (click)="goBack()">Atrás</button>
     </div>
-    <button (click)="goBack()">Atrás</button>
-  </div>
+  </mat-card-content>
+</mat-card>
